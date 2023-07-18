@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
+    <StartupObject>Lesson01.MainClass</StartupObject>
     <!--<Nullable>enable</Nullable>-->
     <!--<ImplicitUsings>enable</ImplicitUsings>-->
   </PropertyGroup>
