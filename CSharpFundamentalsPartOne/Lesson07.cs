@@ -1,7 +1,7 @@
 ﻿namespace Lesson07
 {
 	/// <summary>
-	/// Last Review Date: 11 April 2018
+	/// Last Review Date: 26 July 2023
 	/// Version 2.0.0 (14 April 2015)
 	/// Written By Hamed Banaei
 	/// EMail: kouroshishere@gmail.com
@@ -42,6 +42,7 @@
 
 			Person P = new Person("Afshin Sadeghi", 30);
 			P.ShowInfo();
+			//P._somePrivateField1;
 
 			System.Console.ReadLine();
 		}

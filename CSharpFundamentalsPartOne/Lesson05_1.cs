@@ -1,7 +1,7 @@
 ﻿namespace Lesson05_1
 {
 	/// <summary>
-	/// Last Review Date: 11 April 2018
+	/// Last Review Date: 26 July 2023
 	/// Version 2.0.0 (14 April 2015)
 	/// Written By Hamed Banaei
 	/// EMail: kouroshishere@gmail.com
@@ -40,6 +40,11 @@
 			Person P = new Person();
 			P.FullName = "Bahram Shafagh";
 			P.ShowInfo();
+
+			Person P3 = P0;
+			P3.FullName = "Hamed Banaei";
+			P3.ShowInfo();
+			P0.ShowInfo();
 
 			System.Console.ReadLine();
 		}

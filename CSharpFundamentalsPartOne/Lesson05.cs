@@ -1,7 +1,7 @@
 ﻿namespace Lesson05
 {
 	/// <summary>
-	/// Last Review Date: 11 April 2018
+	/// Last Review Date: 26 July 2023
 	/// Version 2.0.0 (14 April 2015)
 	/// Written By Hamed Banaei
 	/// EMail: kouroshishere@gmail.com
@@ -13,8 +13,17 @@
 
 		public void ShowInfo() // It's a Method!, It's a member!
 		{
-			System.Console.WriteLine("Full Name: {0}, Age: {1}", FullName, Age);
-		}
+			string str1 = "Full Name: " + FullName + ", Age: " + Age;
+            System.Console.WriteLine(str1);
+
+			string str2 = string.Format("Full Name: {0}, Age: {1}", FullName, Age);
+            System.Console.WriteLine(str2);
+            System.Console.WriteLine("Full Name: {0}, Age: {1}", FullName, Age);
+
+			string str3 = $"Full Name {FullName}, Age: {Age}";
+            System.Console.WriteLine(str3);
+            System.Console.WriteLine($"Full Name {FullName}, Age: {Age}");
+        }
 	}
 
 	class MainClass
