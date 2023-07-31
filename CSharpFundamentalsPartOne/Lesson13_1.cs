@@ -71,9 +71,20 @@ namespace Lesson13_1
 			else
 				System.Console.WriteLine("This file is not Compressed");
 
+			if ((oFile.Attribute & (FileAttributes.Hidden | FileAttributes.Archive)) == (FileAttributes.Hidden | FileAttributes.Archive))
+				System.Console.WriteLine("This file is Hidden & Archive");
+			else
+				System.Console.WriteLine("This file is not Hidden & Archive");
+
+			FileAttributes customCombination = FileAttributes.Hidden | FileAttributes.Archive;
+			if ((oFile.Attribute & customCombination) == customCombination)
+				System.Console.WriteLine("This file is Hidden & Archive");
+			else
+				System.Console.WriteLine("This file is not Hidden & Archive");
+
 			oFile.ShowInfo();
 
-            Console.WriteLine($"FileAttributes.Compressed value is {(int)FileAttributes.Compressed}");
+			Console.WriteLine($"FileAttributes.Compressed value is {(int)FileAttributes.Compressed}");
 
 
 			System.Console.ReadLine();
