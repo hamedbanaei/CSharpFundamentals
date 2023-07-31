@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <StartupObject>Lesson07_2.MainClass</StartupObject>
+    <StartupObject>Lesson13_1.MainClass</StartupObject>
     <!--<Nullable>enable</Nullable>-->
     <!--<ImplicitUsings>enable</ImplicitUsings>-->
   </PropertyGroup>

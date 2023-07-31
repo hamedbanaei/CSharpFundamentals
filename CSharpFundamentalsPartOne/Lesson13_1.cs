@@ -1,4 +1,6 @@
-﻿namespace Lesson13_1
+﻿using System;
+
+namespace Lesson13_1
 {
 	/// <summary>
 	/// Last Review Date: 11 April 2018
@@ -44,9 +46,15 @@
 			File oFile = new File("Temp.tmp");
 
 			oFile.Attribute = FileAttributes.Readonly;
+
+			if (oFile.Attribute == FileAttributes.Readonly) // Condition is true
+				System.Console.WriteLine("This file is Readonly");
+			else
+				System.Console.WriteLine("This file is not Readonly");
+
 			oFile.Attribute = FileAttributes.Readonly | FileAttributes.Hidden | FileAttributes.Archive;
 
-			if (oFile.Attribute == FileAttributes.Hidden)
+			if (oFile.Attribute == FileAttributes.Hidden) // Condition is false
 				System.Console.WriteLine("This file is Hidden");
 			else
 				System.Console.WriteLine("This file is not Hidden");
@@ -64,6 +72,9 @@
 				System.Console.WriteLine("This file is not Compressed");
 
 			oFile.ShowInfo();
+
+            Console.WriteLine($"FileAttributes.Compressed value is {(int)FileAttributes.Compressed}");
+
 
 			System.Console.ReadLine();
 		}
