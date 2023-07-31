@@ -51,9 +51,13 @@
 
 		public Person()
 		{
+			Age = 0;
+			Salary = 1_000;
+			FullName = string.Empty;
 		}
 
 		public Person(int age, int salary)
+			: this()
 		{
 			// _age = age;
 
@@ -94,6 +98,9 @@
 
 			Person P2 = new Person(30, 10000);
 			P2.ShowInfo();
+
+			Person P3 = new Person("Hamed", 42);
+			P3.ShowInfo();
 
 			System.Console.ReadLine();
 		}

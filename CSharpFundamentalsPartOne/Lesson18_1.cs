@@ -29,12 +29,12 @@
 			// str1 = "C:\Windows\System32";
 
 			str1 = "C:\\Windows\\System32";
-			str1 = @"C:\Windows\System32";
+			str2 = @"C:\Windows\System32";
 
 			if (str1 == str2)
 				System.Console.WriteLine("Two strings are similar to each other.");
 
-			if (string.Compare(str1, str2, false) == 0) // Case Insensitive!
+			if (string.Compare(str1, str2, true) == 0) // Case Insensitive!
 				System.Console.WriteLine("Two strings are similar to each other.");
 
 			int intTemp;
@@ -43,7 +43,7 @@
 			intTemp = str1.Length;
 
 			str1 = str1.Trim();
-
+			
 			str1 = str1.ToLower();
 			str1 = str1.ToUpper();
 
@@ -53,8 +53,8 @@
 			blnTemp = str1.EndsWith("-]");
 			blnTemp = str1.StartsWith("[-");
 
-			intTemp = str1.IndexOf("Windows"); // 3 Methods Overloadin!
-			intTemp = str1.LastIndexOf("Windows"); // 6 Methods Overloading!
+			intTemp = str1.IndexOf("Windows"); // 9 Methods Overloadin!
+			intTemp = str1.LastIndexOf("Windows"); // 8 Methods Overloading!
 
 			str1 = str1.Remove(5, 3);
 			str2 = str1.Substring(5, 3);
