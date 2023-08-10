@@ -93,7 +93,7 @@
 
 			System.Console.WriteLine("\n----------");
 
-			oStringBuilder.Append(", How Are You? My name is Dariush Tasdighi.");
+			oStringBuilder.Append(", How Are You? My name is Dariush Irani.");
 
 			System.Console.WriteLine(": Length          : {0}", oStringBuilder.Length);
 			System.Console.WriteLine(": Capacity        : {0}", oStringBuilder.Capacity);
@@ -103,6 +103,15 @@
 			System.Console.WriteLine("\n----------");
 
 			oStringBuilder.Remove(0, oStringBuilder.Length);
+
+			System.Console.WriteLine(": Length          : {0}", oStringBuilder.Length);
+			System.Console.WriteLine(": Capacity        : {0}", oStringBuilder.Capacity);
+			System.Console.WriteLine(": Max. Capacity   : {0}", oStringBuilder.MaxCapacity);
+			System.Console.WriteLine(": Value (ToString): {0}", oStringBuilder.ToString());
+
+			System.Console.WriteLine("\n----------");
+
+			oStringBuilder.Clear();
 
 			System.Console.WriteLine(": Length          : {0}", oStringBuilder.Length);
 			System.Console.WriteLine(": Capacity        : {0}", oStringBuilder.Capacity);

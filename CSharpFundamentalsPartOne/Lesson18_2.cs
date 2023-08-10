@@ -46,7 +46,7 @@
 			// ********************
 			// *** Solution (2) ***
 			// ********************
-			for (int intIndex = 0; intIndex <= oPersons.Length - 1; intIndex++)
+			for (int intIndex = 0; intIndex < oPersons.Length; intIndex++)
 				oPersons[intIndex] = new Person();
 
 			oPersons[0].Age = 27;
@@ -58,6 +58,14 @@
 			RectangularArray[0, 0] = 1;
 			RectangularArray[0, 1] = 2;
 			RectangularArray[0, 2] = 3;
+
+			for (int intX = 0; intX < 2; intX++)
+			{
+				for (int intY = 0; intY < 3; intY++)
+				{
+					RectangularArray[intX, intY] = intX * intY;
+				}
+			}
 
 			int[][] JaggedArray = new int[3][]; // Jagged Array!
 
